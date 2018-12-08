@@ -1,4 +1,4 @@
-package mainPage;
+package GUI;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -95,16 +95,16 @@ public class Page1 {
 		GridPane.setConstraints(addressInput, 0, 3);
 		
 		Label zipCode = new Label("Zip: ");
-		GridPane.setConstraints(zipCode, 2, 2);
+		GridPane.setConstraints(zipCode, 1, 2);
 		
 		TextField zipCodeInput = new TextField("");
-		GridPane.setConstraints(zipCodeInput, 1, 2);
+		GridPane.setConstraints(zipCodeInput, 1, 3);
 		
 		TextField state = new TextField("");
-		GridPane.setConstraints(state, 1, 3);
+		GridPane.setConstraints(state, 2, 3);
 		
 		Label stateInput = new Label("State: ");
-		GridPane.setConstraints(stateInput, 2, 3);
+		GridPane.setConstraints(stateInput, 2, 2);
 		
 		Label newUserName = new Label("Enter a Username: ");
 		GridPane.setConstraints(newUserName, 0, 4);

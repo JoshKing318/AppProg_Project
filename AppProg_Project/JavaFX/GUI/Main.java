@@ -1,4 +1,4 @@
-package mainPage;
+package GUI;
 
 import java.awt.Window;
 
@@ -32,9 +32,7 @@ public class Main extends Application {
 
         // File Menu Items
         MenuItem searchFlight = new MenuItem("Search Flights");
-        searchFlight.setOnAction(e -> {
-            System.out.println("Searching For Flights...");
-        });
+        searchFlight.setOnAction(e -> searchPage.display("Search"));
         MenuItem manageFlight = new MenuItem("Manage Flights");
         manageFlight.setOnAction(e -> {
             System.out.println("Add, Update, Delete Flights");
@@ -71,14 +69,7 @@ public class Main extends Application {
         // Menu Bar
         MenuBar menuBar = new MenuBar();
         menuBar.getMenus().addAll(mainMenu, helpMenu);
-        
-        //Scene2 For Searching Flights
-        sfScene = new Scene(borderPane, 400, 300);
-        borderPane.setTop(menuBar);
-        Label sfLabel = new Label("Here are the available flights");
-        VBox sfLayout = new VBox(20);
-        sfLayout.getChildren().add(sfLabel);
-        
+              
         // Layout and Stage
         borderPane = new BorderPane();
         borderPane.setTop(menuBar);
